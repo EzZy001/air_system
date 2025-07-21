@@ -1,8 +1,6 @@
 Config = {}
 
-Config.settings = {
-    language = 'en',
-}
+Config.Locale = "cs"
 
 Config.NPC = {
     TheoryNPC = { coords = vector3(-1156.187, -2717.309, 19.88733), heading = 295.8031, 
@@ -17,4 +15,3 @@ Config.NPC = {
         } ]]--
     }
 }
-

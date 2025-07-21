@@ -5,29 +5,6 @@ local function loadModel(model)
     end
 end
 
-local function loadAnimDict(dict)
-    RequestAnimDict(dict)
-    while not HasAnimDictLoaded(dict) do
-        Wait(100)
-    end
-end
-
-lib.registerContext({
-        id = 'letecka_skola',
-        title = 'Letecká škola',
-        options = {
-
-            {
-            title = 'Letecká teorie',
-            description = 'Teoretická část výcviku',
-            icon = 'fa-id-card',
-            onSelect = function()
-                print("test")
-            end,
-            },
-
-        }
-    })
 
 local function spawnPeds()
     for _, pedInfo in pairs({ Config.NPC.TheoryNPC }) do
@@ -47,10 +24,27 @@ local function spawnPeds()
 
         exports.ox_target:addLocalEntity(ped, {
             {
-                label = 'Letecká škola',
+                label = _Locale("flight_school_target_title"),
                 name = 'letecka_skola',
                 icon = 'fas fa-plane',
                 onSelect = function()
+                    lib.registerContext({
+                        id = 'letecka_skola',
+                        title = _Locale("flight_school_title"),
+                        options = {
+
+                            {
+                            title = _Locale("flight_school_teory_option_title"),
+                            description = _Locale("flight_school_teory_option_desc"),
+                            icon = 'fa-id-card',
+                            onSelect = function()
+                                print("test")
+                            end,
+                            },
+
+                        }
+                    })
+
                     lib.showContext('letecka_skola')
                 end,
                 distance = 2.0
