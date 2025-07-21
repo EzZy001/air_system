@@ -36,11 +36,31 @@ local function spawnPeds()
                             {
                             title = _Locale("flight_school_teory_option_title"),
                             description = _Locale("flight_school_teory_option_desc"),
-                            icon = 'fa-id-card',
+                            icon = Config.menu.icon_theory,
                             onSelect = function()
                                 print("test")
                             end,
                             },
+
+                            
+                            {
+                            title = _Locale("flight_school_heli_option_title"),
+                            description = _Locale("flight_school_heli_option_desc"),
+                            icon = Config.menu.icon_heli,
+                            onSelect = function()
+                                print("test")
+                            end,
+                            },
+
+
+                            {
+                            title = _Locale("flight_school_plane_option_title"),
+                            description = _Locale("flight_school_plane_option_desc"),
+                            icon = Config.menu.icon_plane,
+                            onSelect = function()
+                                print("test")
+                            end,
+                            },                            
 
                         }
                     })

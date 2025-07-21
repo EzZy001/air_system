@@ -1,6 +1,16 @@
 {
     "flight_school_target_title": "Letecká škola",
     "flight_school_title": "Letecká škola",
+
+
     "flight_school_teory_option_title": "Letecká teorie",
-    "flight_school_teory_option_desc": "Teoretická část výcviku"
+    "flight_school_teory_option_desc": "Teoretická část výcviku",
+
+
+    "flight_school_heli_option_title": "Praktický test - helikoptéra",
+    "flight_school_heli_option_desc": "Praktická část výcviku - helikoptéra",
+
+    
+    "flight_school_plane_option_title": "Praktický test - letadlo",
+    "flight_school_plane_option_desc": "Praktická část výcviku - letadlo"
 }
